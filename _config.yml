@@ -23,14 +23,14 @@ name: Chien Nguyen
 position: Research Resident 
 email: chiennv.hust@gmail.com
 description: >-
-  I graduated from [Hanoi University of Science and Technology](https://hust.edu.vn/) with a Computer Science Bachelor’s degree and was advised by [Dr. Linh Ngo Van](https://users.soict.hust.edu.vn/linhnv/).
-  Currently, I am a Research Resident at [VinAI Research](https://vinai.io), Natural Language Processing group, under the supervision of [Prof. Thien Huu Nguyen](https://ix.cs.uoregon.edu/~thien/).
+  I graduated from [Hanoi University of Science and Technology](https://hust.edu.vn/) with a Computer Science Bachelor’s degree and under the supervision of [Dr. Linh Ngo Van](https://users.soict.hust.edu.vn/linhnv/).
+  Currently, I am a Research Resident at [VinAI Research](https://vinai.io), Natural Language Processing group, advised by [Prof. Thien Huu Nguyen](https://ix.cs.uoregon.edu/~thien/).
 
 
 
   My Research Interests focus on Machine Learning, Natural Language Processing and their intersection.
-  I have experience on Information Extraction tasks in different domains and languages.
-  I am currently engaged in Large Language Models (LLMs) and its application in NLP tasks.
+  I also have experience on Information Extraction tasks in different domains and languages.
+  Besides, I am engaged in Large Language Models (LLMs) and its application.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://chiennv2000.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: chiennv2000
