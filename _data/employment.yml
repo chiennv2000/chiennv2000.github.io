@@ -5,9 +5,16 @@
   dates: "Mar 2022 - Current"
   location: Hanoi, Vietnam
 
+- company: VietAI
+  description: >-
+    Lecturer. 
+    Delivered lectures and prepared assignments on theory and coding in the Advanced NLP course
+  dates: "Mar 2023 - Current"
+  location: Ha Noi, Vietnam
+
 - company: ICOMM Media and Tech., Jsc
   description: >-
-    Research Intern.
+    Research Intern in the RnD team.
     Developed and deployed an Open-domain Question Answering System for the Vietnamese language.
   dates: "Jun 2019 - Sep 2020"
   location: Ha Noi, Vietnam
