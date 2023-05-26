@@ -18,23 +18,22 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Keunhong Park
-name: Keunhong Park
-position: Research Scientist 
-email: t4a0itmqm@mozmail.com
+title: Chien Nguyen
+name: Chien Nguyen
+position: Research Resident 
+email: chiennv.hust@gmail.com
 description: >-
-  I am a research scientist at [Google](https://ai.google/research/), where I work on photorealistic 3D reconstruction at internet scale.
+  I graduated from [Hanoi University of Science and Technology](https://hust.edu.vn/) with a Computer Science Bachelor’s degree and was advised by [Dr. Linh Ngo Van](https://users.soict.hust.edu.vn/linhnv/).
+  Currently, I am a Research Resident at [VinAI Research](https://vinai.io), Natural Language Processing grpup, under the supervision of [Prof. Thien Huu Nguyen](https://ix.cs.uoregon.edu/~thien/).
 
-
-  Previously, I was a Ph. D student at the [University of Washington](https://grail.cs.washington.edu/) advised by
-  [Ali Farhadi](https://homes.cs.washington.edu/~ali/) and
-  [Steve Seitz](https://homes.cs.washington.edu/~seitz/).
+  My Research Interests focus on Machine Learning, Natural Language Processing and their intersection.
+  I have experience on Information Extraction tasks in different domains and languages.
+  I am currently engaged in Large Language Models (LLMs) and its application in NLP tasks.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://keunhong.com" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: KeunhongP
-github_username: keunhong
-google_scholar: HVZb-5oAAAAJ
-google_analytics: G-MFWSBLRKG0
+url: "https://chiennv2000.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: chiennv2000
+github_username: chiennv2000
+google_scholar: fW5HEnEAAAAJ
 
 # Build settings
 theme: minima
