@@ -1,6 +1,40 @@
+- id: ebmcled
+  title: "Transitioning Representations between Languages for Cross-lingual Event Detection via Langevin Dynamics"
+  venue: EMNLP 2023 (Findings)
+  description: "We explored a novel alignment method for cross-lingual transfer learning in Event Detection."
+  authors:
+    - chiennv2000
+    - huuhuy
+    - frack
+    - thiennh
+
+- id: okapi
+  title: "Okapi: Instruction-tuned Large Language Models in Multiple Languages with Reinforcement Learning"
+  venue: EMNLP 2023 (Demonstration)
+  description: "A framework that introduces resources and models for instruction tuning for LLMs with RLHF in 26 languages."
+  authors:
+    - vietlai
+    - chiennv2000eq
+    - nghiango
+    - thuatnguyen
+    - frack
+    - rossi
+    - thiennh
+
+- id: okapi
+  title: "A Spectral Viewpoint on Continual Relation Extraction"
+  venue: EMNLP 2023 (Findings)
+  description: "A novel method for Continual Relation Extraction (CRE) with Feature Decorrelation."
+  authors:
+    - huuhuy
+    - chiennv2000
+    - linhnv
+    - anhtuan
+    - thiennh
+
 - id: retrievalcled
   title: "Retrieving Relevant Context to Align Representations for Cross-lingual Event Detection"
-  venue: Findings of ACL, 2023
+  venue: ACL 2023 (Findings)
   description: "A new approach for the cross-lingual transfer learning problem in Event Detection using Retrieval-Augmented method."
   authors:
     - chiennv2000
@@ -9,8 +43,8 @@
 
 - id: doceae
   title: "Contextualized Soft Prompts for Extraction of Event Arguments"
-  venue: Findings of ACL, 2023
-  description: "A novel approach for document-level Event Argument Extraction (EAE) using graph-based soft prompts with better customizability and stability"
+  venue: ACL 2023 (Findings)
+  description: "A novel approach for document-level Event Argument Extraction (EAE) using graph-based soft prompts with better customizability and stability."
   authors:
     - chiennv2000
     - hieuman
