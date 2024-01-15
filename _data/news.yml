@@ -1,6 +1,6 @@
 - date: Jan 2024
   description: >-
-    We introduced [Vistral](Viet-Mistral/Vistral-7B-Chat), a new state-of-the-art conversational-style Large Language Model for Vietnamese. Vistral outperforms ChatGPT over major LLM benchmark datasets for Vietnamese.
+    We introduced [Vistral](Viet-Mistral/Vistral-7B-Chat), a new state-of-the-art conversational-style Large Language Model for Vietnamese. 
 
 - date: Oct 2023
   description: >-
