@@ -1,3 +1,17 @@
+- id: culturax
+  title: "CulturaX: A Cleaned, Enormous, and Multilingual Dataset for Large Language Models in 167 Languages"
+  venue: LREC-Coling 2024
+  description: "We introduced a largest multilingual dataset with 6.3 trillion tokens in 167 languages, readily usable for Large Language Models (LLMs) development"
+  authors:
+    - thuatnguyen
+    - chiennv2000
+    - vietlai
+    - hieuman
+    - nghiango
+    - frack
+    - rossi
+    - thiennh
+
 - id: ebmcled
   title: "Transitioning Representations between Languages for Cross-lingual Event Detection via Langevin Dynamics"
   venue: EMNLP 2023 (Findings)
@@ -13,7 +27,7 @@
   venue: EMNLP 2023 (Demonstration)
   description: "A framework that introduces resources and models for instruction tuning for LLMs with RLHF in 26 languages."
   authors:
-    - vietlai
+    - vietlaieq
     - chiennv2000eq
     - nghiango
     - thuatnguyen

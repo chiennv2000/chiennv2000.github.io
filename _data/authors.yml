@@ -48,6 +48,11 @@ frack:
 
 vietlai:
   first_name: Viet
+  last_name: Lai
+  website: https://laiviet.github.io/
+
+vietlaieq:
+  first_name: Viet
   last_name: Lai*
   website: https://laiviet.github.io/
 
