@@ -1,0 +1,29 @@
+{% comment %}
+  Format a CV date for badge display.
+  - YYYY-MM -> Mon YYYY
+  - YYYY -> YYYY
+  - YYYY-YY (e.g. 2023-24) -> unchanged
+  - NOW -> Present
+{% endcomment %}
+
+{% assign d = include.date | strip %}
+
+{% if d == '' %}
+{% elsif d == 'NOW' or d == 'now' %}
+Present
+{% else %}
+  {% assign parts = d | split: '-' %}
+  {% if parts.size == 1 %}
+    {{ d }}
+  {% elsif parts.size == 2 %}
+    {% assign second = parts[1] | plus: 0 %}
+    {% if second > 12 %}
+      {{ d }}
+    {% else %}
+      {% assign iso_date = parts[0] | append: '-' | append: parts[1] | append: '-01' %}
+      {{ iso_date | date: '%b %Y' }}
+    {% endif %}
+  {% else %}
+    {{ d | date: '%b %Y' }}
+  {% endif %}
+{% endif %}

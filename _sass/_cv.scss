@@ -42,6 +42,14 @@ a.btncv:hover {
  * CV TIME_TABLE styles
  *****************************/
 
+ span.cv-date-badge {
+  min-width: 7.5rem;
+  white-space: nowrap;
+  line-height: 1.2;
+  text-transform: none;
+  font-size: 0.65rem;
+}
+
 p.location {
   font-size: 0.7rem;
   white-space: nowrap;

@@ -1,0 +1,16 @@
+{% comment %}
+  Format a CV date range for badge display (e.g. Jun 2026 - Sep 2026).
+{% endcomment %}
+
+{% assign start_raw = include.start | strip %}
+{% assign end_raw = include.end | strip %}
+{% if end_raw == '' %}
+  {% assign end_raw = 'NOW' %}
+{% endif %}
+
+{% capture start_fmt %}{% include cv/format_date.liquid date=start_raw %}{% endcapture %}
+{% assign start_fmt = start_fmt | strip %}
+{% capture end_fmt %}{% include cv/format_date.liquid date=end_raw %}{% endcapture %}
+{% assign end_fmt = end_fmt | strip %}
+
+{{ start_fmt }} - {{ end_fmt }}

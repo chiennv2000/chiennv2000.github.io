@@ -16,9 +16,8 @@
               <tbody>
                 <tr>
                   <td>
-                    <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">
-                      {{- start_date | split: '-' | slice: 0, 1 | join: '' -}}
-                    </span>
+                    {% capture date %}{% include cv/format_date.liquid date=start_date %}{% endcapture %}
+                    <span class="badge cv-date-badge font-weight-bold danger-color-dark align-middle">{{ date | strip }}</span>
                   </td>
                 </tr>
               </tbody>

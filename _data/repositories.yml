@@ -1,14 +1,10 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - chiennv2000
 
-repo_description_lines_max: 2
+repo_description_lines_max: 3
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - chiennv2000/orthrus
+  - nlp-uoregon/Okapi
+  - nlp-uoregon/mlmm-evaluation
+  - nlp-uoregon/oregon_gpt_oss_patching

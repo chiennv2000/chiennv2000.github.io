@@ -1,115 +1,159 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
-
-@book{einstein1920relativity,
-  title     = {Relativity: the Special and General Theory},
-  author    = {Einstein, Albert},
-  year      = {1920},
-  publisher = {Methuen & Co Ltd},
-  html      = {relativity.html}
+@inproceedings{nguyen2026crisp,
+  abbr         = {EMNLP},
+  title        = {CRISP: Cliff-awaRe Input-adaptive Sparse Prefilling with Structural-Mass-Motivated Routing},
+  author       = {Nguyen, Huy Huu and Nguyen, Chien Van and Dernoncourt, Franck and Rossi, Ryan A. and Van, Linh Ngo and Chen, Jieyang and Nguyen, Thien Huu},
+  booktitle    = {Proceedings of the 31st Conference on Empirical Methods in Natural Language Processing (EMNLP)},
+  abstract     = {The attention prefilling phase of long-context LLM inference scales quadratically, making self-attention a severe computational bottleneck. Traditional sparse attention methods mitigate this through fixed patterns or offline profiling, but lack the flexibility to adapt to input-dependent attention structure. Recent dynamic methods address this by routing heads to sparse patterns in real-time, but rely on indirect routing proxies with overhead and budget allocation mechanisms that overlook the post-softmax mass hierarchy. We present CRISP (Cliff-awaRe Input-adaptive Sparse Prefilling), which identifies and addresses two structural challenges in this dynamic routing paradigm. First, we show that the routing decision can be read directly off the structure of the proxy attention map. We replace the Jensen-Shannon Divergence (JSD) routing with C struct , a structural proxy that measures mass at Vertical-Slash compatible positions and reproduces JSD’s routing decisions while eliminating both the pooled matmul and subsequent KL divergence overhead. Second, we formalize the post-softmax mass cliff and demonstrate theoretically that strictly cumulative coverage thresholds accumulate O ⁡ ( n ) background noise at long contexts. CRISP navigates this via a sink-aware threshold grounded in the noise floor. Empirically, across InfiniteBench, RULER and LongBench on two model families, CRISP is the strongest sparse method overall and matches or exceeds exact dense attention on retrieval-heavy benchmarks, recovering up to +28.0 pp on retrieval tasks over baselines and achieving up to a 5.30 × attention speedup at 512k tokens, driven primarily by our O ⁡ ( n ) noise elimination during selection while preserving structural integrity.},
+  pdf          = {https://arxiv.org/pdf/2609.01925},
+  year         = {2026},
+  selected     = {true},
+  bibtex_show  = {false}
 }
 
-@book{einstein1956investigations,
-  bibtex_show = {true},
-  title       = {Investigations on the Theory of the Brownian Movement},
-  author      = {Einstein, Albert},
-  year        = {1956},
-  publisher   = {Courier Corporation},
-  preview     = {brownian-motion.gif}
+@article{vannguyen2026orthrusmemoryefficientparalleltoken,
+  abbr         = {arXiv},
+  title        = {Orthrus: Memory-Efficient Parallel Token Generation via Dual-View Diffusion},
+  author       = {Nguyen, Chien Van and Hegde, Chaitra and Pham, Van-Cuong and Rossi, Ryan A. and Dernoncourt, Franck and Nguyen, Thien Huu},
+  journal      = {arXiv preprint arXiv:2605.12825},
+  year         = {2026},
+  abstract     = {We introduce Orthrus, a simple and efficient dual-architecture framework that unifies the exact generation fidelity of autoregressive Large Language Models (LLMs) with the high-speed parallel token generation of diffusion models. The sequential nature of standard autoregressive decoding represents a fundamental bottleneck for high-throughput inference. While diffusion language models attempt to break this barrier via parallel generation, they suffer from significant performance degradation, high training costs, and a lack of rigorous convergence guarantees. Orthrus resolves this dichotomy natively. Designed to seamlessly integrate into existing Transformers, the framework augments a frozen LLM with a lightweight, trainable module to create a parallel diffusion view alongside the standard autoregressive view. In this unified system, both views attend to the exact same high-fidelity Key-Value (KV) cache; the autoregressive head executes context pre-filling to construct accurate KV representations, while the diffusion head executes parallel generation. By employing an exact consensus mechanism between the two views, Orthrus guarantees lossless inference, delivering up to a 7.8x speedup with only an O(1) memory cache overhead and minimal parameter additions.},
+  pdf          = {https://arxiv.org/abs/2605.12825},
+  selected     = {true},
+  bibtex_show  = {false}
 }
 
-@article{einstein1950meaning,
-  abbr        = {AJP},
-  bibtex_show = {true},
-  title       = {The meaning of relativity},
-  author      = {Einstein, Albert and Taub, AH},
-  journal     = {American Journal of Physics},
-  volume      = {18},
-  number      = {6},
-  pages       = {403--404},
-  year        = {1950},
-  publisher   = {American Association of Physics Teachers}
+@inproceedings{van2025lizard,
+  abbr         = {ACL},
+  title        = {Lizard: An Efficient Linearization Framework for Large Language Models},
+  author       = {Nguyen, Chien Van and Nguyen, Huy and Zhang, Ruiyi and Deilamsalehy, Hanieh and Mathur, Puneet and Lai, Viet Dac and Wang, Haoliang and Subramanian, Jayakumar and Rossi, Ryan A and Bui, Trung and Vlassis, Nikos and Dernoncourt, Franck and Nguyen, Thien Huu},
+  booktitle    = {Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (ACL)},
+  abstract     = {We propose Lizard, a linearization framework that transforms pretrained Transformer-based Large Language Models (LLMs) into subquadratic architectures. Transformers faces severe computational and memory bottlenecks with long sequences due to the quadratic complexity of softmax attention and the growing Key-Value (KV) cache that makes inference memory-bound by context length. Lizard addresses these limitations by introducing a subquadratic attention mechanism that closely approximates softmax attention while preserving model quality. Unlike prior linearization methods constrained by fixed, non-adaptive structures, Lizard augments the architecture with compact, learnable modules that enable adaptive memory control and robust length generalization. Moreover, we introduce a hardwareaware algorithm that solves numerical instability in gated attention to accelerate training. Extensive experiments show that Lizard achieves near-lossless recovery of its teacher model's performance, significantly outperforming previous methods by up to 9.4 - 24.5 points on the 5-shot MMLU benchmark and demonstrating superior associative recall.},
+  pdf          = {https://arxiv.org/abs/2507.09025},
+  year         = {2026},
+  selected     = {true},
+  bibtex_show  = {false}
 }
 
-@article{PhysRev.47.777,
-  abbr              = {PhysRev},
-  title             = {Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author            = {Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract          = {In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal           = {Phys. Rev.},
-  location          = {New Jersey},
-  volume            = {47},
-  issue             = {10},
-  pages             = {777--780},
-  numpages          = {0},
-  year              = {1935},
-  month             = {May},
-  publisher         = aps,
-  doi               = {10.1103/PhysRev.47.777},
-  url               = {https://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html              = {https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf               = {example_pdf.pdf},
-  altmetric         = {248277},
-  dimensions        = {true},
-  google_scholar_id = {qyhmnyLat1gC},
-  video             = {https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info   = {. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation        = {* Example use of superscripts<br>† Albert Einstein},
-  selected          = {true},
-  inspirehep_id     = {3255}
+
+@inproceedings{van2026octopus,
+  abbr         = {ACL},
+  title        = {Octopus: Gated Selective Attention for Memory-Bounded Long-Context Inference in Large Language Models},
+  author       = {Nguyen, Chien Van and Rossi, Ryan A. and Van, Linh Ngo and Dernoncourt, Franck and Nguyen, Thien Huu},
+  booktitle    = {Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (ACL)},
+  abstract     = {Transformer inference becomes increasingly memory-bound as the Key–Value (KV) cache grows linearly with sequence length. While subquadratic architectures offer constant-memory inference, they rely on aggressive state compression that degrades performance on complex reasoning tasks. We propose Octopus, a framework that confers fixed-memory inference onto pretrained Transformers without the information loss of linearization. Octopus retrofits attention layers with Gated Selective Attention, a learnable module that enforces an adaptive sparsity policy over the context history. By dynamically scoring and retaining only high-utility KV states, this mechanism transforms the unbounded cache into a compact, evolving memory budget that filters out uninformative noise. Empirically, on the GSM8K benchmark, it outperforms state-of-the-art linearized baselines by over 36 points under identical memory constraints. Remarkably, Octopus also surpasses its own full-cache teacher, demonstrating that learned sparse retention serves as an effective regularizer for long-horizon reasoning.},
+  pdf          = {https://aclanthology.org/2026.acl-long.1631/},
+  year         = {2026},
+  selected     = {true},
+  bibtex_show  = {false}
 }
 
-@article{einstein1905molekularkinetischen,
-  title     = {{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author    = {Einstein, A.},
-  journal   = {Annalen der physik},
-  volume    = {322},
-  number    = {8},
-  pages     = {549--560},
-  year      = {1905},
-  publisher = {Wiley Online Library}
+@inproceedings{nguyen-etal-2025-survey,
+  abbr         = {RANLP},
+  title        = "A Survey on Small Language Models",
+  author       = "Nguyen, Chien Van and Shen, Xuan and Aponte, Ryan and Xia, Yu and Basu, Samyadeep and Hu, Zhengmian and Chen, Jian and Parmar, Mihir and Kunapuli, Sasidhar and Barrow, Joe and Wu, Junda and Singh, Ashish and Wang, Yu and Gu, Jiuxiang and K. Ahmed, Nesreen and Lipka, Nedim and Zhang, Ruiyi and Chen, Xiang and Yu, Tong and Kim, Sungchul and Deilamsalehy, Hanieh and Park, Namyong and Rimer, Michael and Zhang, Zhehao and Yang, Huanrui and Mathur, Puneet and Wu, Gang and Dernoncourt, Franck and Rossi, Ryan A. and Nguyen, Thien Huu",
+  booktitle    = "Proceedings of the 15th International Conference on Recent Advances in Natural Language Processing - Natural Language Processing in the Generative AI Era (RANLP)",
+  abstract     = "Small Language Models (SLMs) have become increasingly important due to their efficiency and performance to perform various language tasks with minimal computational resources, making them ideal for various settings including on-device, mobile, edge devices, among many others. In this article, we present a comprehensive survey on SLMs, focusing on their architectures, training techniques, and model compression techniques. We propose a novel taxonomy for categorizing the methods used to optimize SLMs, including model compression, pruning, and quantization techniques. We summarize the benchmark datasets that are useful for benchmarking SLMs along with the evaluation metrics commonly used. Additionally, we highlight key open challenges that remain to be addressed. Our survey aims to serve as a valuable resource for researchers and practitioners interested in developing and deploying small yet efficient language models.",
+  pdf          = {https://aclanthology.org/2025.ranlp-1.93/},
+  year         = {2025},
+  selected     = {true},
+  bibtex_show  = {false}
 }
 
-@article{einstein1905movement,
-  abbr    = {Ann. Phys.},
-  title   = {Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author  = {Einstein, A.},
-  journal = {Ann. Phys.},
-  volume  = {17},
-  pages   = {549--560},
-  year    = {1905}
+@article{nguyen2025taipan,
+  abbr         = {arXiv},
+  title        = {Taipan: Efficient and Expressive State Space Language Models with Selective Attention},
+  author       = {Nguyen, Chien Van and Nguyen, Huy Huu and Rossi, Ryan A. and Bui, Trung and Lai, Viet and Dernoncourt, Franck and Nguyen, Thien},
+  journal      = {arXiv preprint arXiv:2410.18572},
+  abstract     = {Efficient long-context language modeling remains a significant challenge in Natural Language Processing (NLP). While Transformers dominate language tasks, they struggle with long sequences due to quadratic computational complexity in training and linearly scaling memory costs during inference. Recent State Space Models (SSMs) such as Mamba offer alternatives with constant memory usage, but they underperform in tasks requiring extensive in-context retrieval. We introduce Taipan, a novel hybrid architecture that combines Mamba-2 with Selective Attention Layers (SALs). These SALs identify tokens requiring long-range interactions, remove less important features, and then augment their representations using the attention module. This approach balances Mamba's efficiency with Transformer-like performance in memory-intensive tasks. By constraining the attention budget, Taipan extends accurate predictions to context lengths of up to 1 million tokens while preserving computational efficiency. Our experiments demonstrate Taipan's superior performance across various scales and tasks, offering a promising solution for efficient long-context language modeling.},
+  pdf          = {https://arxiv.org/abs/2410.18572},
+  year         = {2025},
+  selected     = {true},
+  bibtex_show  = {false}
 }
 
-@article{einstein1905electrodynamics,
-  title  = {On the electrodynamics of moving bodies},
-  author = {Einstein, A.},
-  year   = {1905}
+@inproceedings{nguyen2023culturaxcleanedenormousmultilingual,
+  abbr         = {COLING},
+  title        = {CulturaX: A Cleaned, Enormous, and Multilingual Dataset for LLMs in 167 Languages},
+  author       = {Nguyen, Thuat and Nguyen, Chien Van and Lai, Viet Dac and Man, Hieu and Ngo, Nghia Trung and Dernoncourt, Franck and Rossi, Ryan A. and Nguyen, Thien Huu},
+  booktitle    = {Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (COLING)},
+  abstract     = {The driving factors behind the development of large language models (LLMs) with impressive learning capabilities are their colossal model sizes and extensive training datasets. Along with the progress in natural language processing, LLMs have been frequently made accessible to the public to foster deeper investigation and applications. However, when it comes to training datasets for these LLMs, especially the recent state-of-the-art models, they are often not fully disclosed. Creating training data for high-performing LLMs involves extensive cleaning and deduplication to ensure the necessary level of quality. The lack of transparency for training data has thus hampered research on attributing and addressing hallucination and bias issues in LLMs, hindering replication efforts and further advancements in the community. These challenges become even more pronounced in multilingual learning scenarios, where the available multilingual text datasets are often inadequately collected and cleaned. Consequently, there is a lack of open-source and readily usable dataset to effectively train LLMs in multiple languages. To overcome this issue, we present CulturaX, a substantial multilingual dataset with 6.3 trillion tokens in 167 languages, tailored for LLM development. Our dataset undergoes meticulous cleaning and deduplication through a rigorous pipeline of multiple stages to accomplish the best quality for model training, including language identification, URL-based filtering, metric-based cleaning, document refinement, and data deduplication.},
+  pdf          = {https://arxiv.org/abs/2309.09400},
+  year         = {2024},
+  selected     = {true},
+  bibtex_show  = {false}
 }
 
-@article{einstein1905photoelectriceffect,
-  bibtex_show = {true},
-  abbr        = {Ann. Phys.},
-  title       = {{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}},
-  author      = {Albert Einstein},
-  abstract    = {This is the abstract text.},
-  journal     = {Ann. Phys.},
-  volume      = {322},
-  number      = {6},
-  pages       = {132--148},
-  year        = {1905},
-  doi         = {10.1002/andp.19053220607},
-  award       = {Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name  = {Nobel Prize}
+@inproceedings{man-etal-2024-hierarchical,
+  abbr         = {COLING},
+  title        = {Hierarchical Selection of Important Context for Generative Event Causality Identification with Optimal Transports},
+  author       = {Man, Hieu and Nguyen, Chien Van and Ngo, Nghia Trung and Ngo, Linh and Dernoncourt, Franck and Nguyen, Thien Huu},
+  booktitle    = {Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (COLING)},
+  abstract     = {We study the problem of Event Causality Identification (ECI) that seeks to predict causal relation between event mentions in the text. In contrast to previous classification-based models, a few recent ECI methods have explored generative models to deliver state-of-the-art performance. However, such generative models cannot handle document-level ECI where long context between event mentions must be encoded to secure correct predictions. In addition, previous generative ECI methods tend to rely on external toolkits or human annotation to obtain necessary training signals. To address these limitations, we propose a novel generative framework that leverages Optimal Transport (OT) to automatically select the most important sentences and words from full documents. Specifically, we introduce hierarchical OT alignments between event pairs and the document to extract pertinent contexts. The selected sentences and words are provided as input and output to a T5 encoder-decoder model which is trained to generate both the causal relation label and salient contexts. This allows richer supervision without external tools. We conduct extensive evaluations on different datasets with multiple languages to demonstrate the benefits and state-of-the-art performance of ECI.},
+  pdf          = {https://aclanthology.org/2024.lrec-main.711/},
+  year         = {2024},
+  selected     = {true},
+  bibtex_show  = {false}
 }
 
-@book{przibram1967letters,
-  bibtex_show = {true},
-  title       = {Letters on wave mechanics},
-  author      = {Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year        = {1967},
-  publisher   = {Vision},
-  preview     = {wave-mechanics.gif},
-  abbr        = {Vision}
+@inproceedings{lai-etal-2023-okapi,
+  abbr         = {EMNLP},
+  title        = {Okapi: Instruction-tuned Large Language Models in Multiple Languages with Reinforcement Learning from Human Feedback},
+  author       = {Lai*, Viet and Nguyen*, Chien Van and Ngo, Nghia and Nguyen, Thuat and Dernoncourt, Franck and Rossi, Ryan A. and Nguyen, Thien Huu},
+  booktitle    = {Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing: System Demonstrations (EMNLP Demo)},
+  abstract     = {A key technology for large language models (LLMs) involves instruction tuning that helps align the models’ responses with human expectations to realize impressive learning abilities. Two major approaches for instruction tuning characterize supervised fine-tuning (SFT) and reinforcement learning from human feedback (RLHF), which are applied to produce the best commercial LLMs. To improve the accessibility of LLMs, various instruction-tuned open-source LLMs have also been introduced recently. However, existing open-source LLMs have only been instruction-tuned for English and a few popular languages, thus hindering their accessibility to many other languages in the world. In addition, SFT has been used as the only approach to instruction-tune open-source LLMs for multiple languages. This has left a significant gap for fine-tuned LLMs based on RLHF in diverse languages and raised important questions on how RLHF can boost the performance of multilingual instruction tuning. To overcome this issue, we present Okapi, the first system with instruction-tuned LLMs based on RLHF for multiple languages. Okapi introduces instruction and response-ranked data in 26 diverse languages to facilitate the experiments and development of future multilingual LLM research. We also present benchmark datasets to enable the evaluation of generative LLMs in multiple languages. Our experiments demonstrate the advantages of RLHF for multilingual instruction over SFT for different base models and datasets.},
+  pdf          = {https://arxiv.org/abs/2307.16039},
+  year         = {2023},
+  selected     = {true},
+  bibtex_show  = {false}
+}
+
+@inproceedings{nguyen-etal-2023-transitioning,
+  abbr         = {EMNLP},
+  title        = {Transitioning Representations between Languages for Cross-lingual Event Detection via Langevin Dynamics},
+  author       = {Nguyen, Chien Van and Nguyen, Huy Huu and Dernoncourt, Franck and Nguyen, Thien Huu},
+  booktitle    = {Findings of the Association for Computational Linguistics: EMNLP 2023 (EMNLP Findings)},
+  abstract     = {Cross-lingual transfer learning (CLTL) for event detection (ED) aims to develop models in high-resource source languages that can be directly applied to produce effective performance for lower-resource target languages. Previous research in this area has focused on representation matching methods to develop a language-universal representation space into which source- and target-language example representations can be mapped to achieve cross-lingual transfer. However, as this approach modifies the representations for the source-language examples, the models might lose discriminative features for ED that are learned over training data of the source language to prevent effective predictions. To this end, our work introduces a novel approach for cross-lingual ED where we only aim to transition the representations for the target-language examples into the source-language space, thus preserving the representations in the source language and their discriminative information. Our method introduces Langevin Dynamics to perform representation transition and a semantic preservation framework to retain event type features during the transition process. Extensive experiments over three languages demonstrate the state-of-the-art performance for ED in CLTL.},
+  pdf          = {https://aclanthology.org/2023.findings-emnlp.938/},
+  year         = {2023},
+  selected     = {true},
+  bibtex_show  = {false}
+}
+
+@inproceedings{nguyen-etal-2023-retrieving,
+  abbr         = {ACL},
+  title        = {Retrieving Context to Align Representations for Cross-lingual Event Detection},
+  author       = {Nguyen, Chien Van and Van, Linh Ngo and Nguyen, Thien Huu},
+  booktitle    = {Findings of the Association for Computational Linguistics: ACL 2023 (ACL Findings)},
+  abstract     = {We study the problem of cross-lingual transfer learning for event detection (ED) where models trained on a source language are expected to perform well on data for a new target language. Among a few recent works for this problem, the main approaches involve representation matching (e.g., adversarial training) that aims to eliminate language-specific features from the representations to achieve the language-invariant representations. However, due to the mix of language-specific features with event-discriminative context, representation matching methods might also remove important features for event prediction, thus hindering the performance for ED. To address this issue, we introduce a novel approach for cross-lingual ED where representations are augmented with additional context (i.e., not eliminating) to bridge the gap between languages while enriching the contextual information to facilitate ED. At the core of our method involves a retrieval model that retrieves relevant sentences in the target language for an input sentence to compute augmentation representations. Experiments on three languages demonstrate the state-of-the-art performance of our model for cross-lingual ED.},
+  pdf          = {https://aclanthology.org/2023.findings-acl.135/},
+  year         = {2023},
+  selected     = {true},
+  bibtex_show  = {false}
+}
+
+@inproceedings{nguyen-etal-2023-contextualized,
+  abbr         = {ACL},
+  title        = {Contextualized Soft Prompts for Extraction of Event Arguments},
+  author       = {Nguyen, Chien Van and Man, Hieu and Nguyen, Thien Huu},
+  booktitle    = {Findings of the Association for Computational Linguistics: ACL 2023 (ACL Findings)},
+  abstract     = {Event argument extraction (EAE) is a sub-task of event extraction where the goal is to identify roles of entity mentions for events in text. The current state-of-the-art approaches for this problem explore prompt-based methods to prompt pre-trained language models for arguments over input context. However, existing prompt-based methods mainly rely on discrete and manually-designed prompts that cannot exploit specific context for each example to improve customization for optimal performance. In addition, the discrete nature of current prompts prevents the incorporation of relevant context from multiple external documents to enrich prompts for EAE. To this end, we propose a novel prompt-based method for EAE that introduces soft prompts to facilitate the encoding of individual example context and multiple relevant documents to boost EAE. We extensively evaluate the proposed method on benchmark datasets for EAE to demonstrate its benefits with state-of-the-art performance.},
+  pdf          = {https://aclanthology.org/2023.findings-acl.266/},
+  year         = {2023},
+  selected     = {true},
+  bibtex_show  = {false}
+}
+
+@inproceedings{nguyen-etal-2023-spectral,
+  abbr         = {EMNLP},
+  title        = {A Spectral Viewpoint on Continual Relation Extraction},
+  author       = {Nguyen, Huy and Nguyen, Chien Van and Ngo, Linh and Tuan, Luu Anh and Nguyen, Thien Huu},
+  booktitle    = {Findings of the Association for Computational Linguistics: EMNLP 2023 (EMNLP Findings)},
+  abstract     = {Continual Relation Extraction (CRE) aims to continuously train a model to learn new relations while preserving its ability on previously learned relations. Similar to other continual learning problems, in CRE, models experience representation shift, where learned deep space changes in the continual learning process, which leads to the downgrade in the performance of the old tasks. In this work, we will provide an insight into this phenomenon under the spectral viewpoint. Our key argument is that, for each class shape, if its eigenvectors (or spectral components) do not change much, the shape is well-preserved. We then conduct a spectral experiment and show that, for the shape of each class, the eigenvectors with larger eigenvalue are more preserved after learning new tasks which means these vectors are good at keeping class shapes. Based on this analysis, we propose a simple yet effective class-wise regularization that improve the eigenvalues in the representation learning. We observe that our proposed regularization leads to an increase in the eigenvalues. Extensive experiments on two benchmark datasets, FewRel and TACRED, show the effectiveness of our proposed method with significant improvement in performance compared to the state-of-the-art models. Further analyses also verify our hypothesis that larger eigenvalues lead to better performance and vice versa.},
+  pdf          = {https://aclanthology.org/2023.findings-emnlp.645/},
+  year         = {2023},
+  selected     = {false},
+  bibtex_show  = {false}
 }
