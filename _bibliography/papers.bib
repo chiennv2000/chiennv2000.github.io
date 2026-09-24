@@ -1,6 +1,20 @@
 ---
 ---
 
+@inproceedings{vannguyen2026orthrusmemoryefficientparalleltoken,
+  abbr         = {NeurIPS},
+  title        = {Orthrus: Memory-Efficient Parallel Token Generation via Dual-View Diffusion},
+  author       = {Nguyen, Chien Van and Hegde, Chaitra and Pham, Van-Cuong and Rossi, Ryan A. and Dernoncourt, Franck and Nguyen, Thien Huu},
+  booktitle    = {Proceedings of the 40th Conference on Neural Information Processing Systems (NeurIPS)},
+  abstract     = {We introduce Orthrus, a simple and efficient dual-architecture framework that unifies the exact generation fidelity of autoregressive Large Language Models (LLMs) with the high-speed parallel token generation of diffusion models. The sequential nature of standard autoregressive decoding represents a fundamental bottleneck for high-throughput inference. While diffusion language models attempt to break this barrier via parallel generation, they suffer from significant performance degradation, high training costs, and a lack of rigorous convergence guarantees. Orthrus resolves this dichotomy natively. Designed to seamlessly integrate into existing Transformers, the framework augments a frozen LLM with a lightweight, trainable module to create a parallel diffusion view alongside the standard autoregressive view. In this unified system, both views attend to the exact same high-fidelity Key-Value (KV) cache; the autoregressive head executes context pre-filling to construct accurate KV representations, while the diffusion head executes parallel generation. By employing an exact consensus mechanism between the two views, Orthrus guarantees lossless inference, delivering up to a 7.8x speedup with only an O(1) memory cache overhead and minimal parameter additions.},
+  pdf          = {https://arxiv.org/abs/2605.12825},
+  year         = {2026},
+  spotlight_presentation = {Spotlight Presentation [Top 1.3%]},
+  selected     = {true},
+  spotlight    = {true},
+  bibtex_show  = {false}
+}
+
 @inproceedings{nguyen2026crisp,
   abbr         = {EMNLP},
   title        = {CRISP: Cliff-awaRe Input-adaptive Sparse Prefilling with Structural-Mass-Motivated Routing},
@@ -9,18 +23,6 @@
   abstract     = {The attention prefilling phase of long-context LLM inference scales quadratically, making self-attention a severe computational bottleneck. Traditional sparse attention methods mitigate this through fixed patterns or offline profiling, but lack the flexibility to adapt to input-dependent attention structure. Recent dynamic methods address this by routing heads to sparse patterns in real-time, but rely on indirect routing proxies with overhead and budget allocation mechanisms that overlook the post-softmax mass hierarchy. We present CRISP (Cliff-awaRe Input-adaptive Sparse Prefilling), which identifies and addresses two structural challenges in this dynamic routing paradigm. First, we show that the routing decision can be read directly off the structure of the proxy attention map. We replace the Jensen-Shannon Divergence (JSD) routing with C struct , a structural proxy that measures mass at Vertical-Slash compatible positions and reproduces JSD’s routing decisions while eliminating both the pooled matmul and subsequent KL divergence overhead. Second, we formalize the post-softmax mass cliff and demonstrate theoretically that strictly cumulative coverage thresholds accumulate O ⁡ ( n ) background noise at long contexts. CRISP navigates this via a sink-aware threshold grounded in the noise floor. Empirically, across InfiniteBench, RULER and LongBench on two model families, CRISP is the strongest sparse method overall and matches or exceeds exact dense attention on retrieval-heavy benchmarks, recovering up to +28.0 pp on retrieval tasks over baselines and achieving up to a 5.30 × attention speedup at 512k tokens, driven primarily by our O ⁡ ( n ) noise elimination during selection while preserving structural integrity.},
   pdf          = {https://arxiv.org/pdf/2609.01925},
   year         = {2026},
-  selected     = {true},
-  bibtex_show  = {false}
-}
-
-@article{vannguyen2026orthrusmemoryefficientparalleltoken,
-  abbr         = {arXiv},
-  title        = {Orthrus: Memory-Efficient Parallel Token Generation via Dual-View Diffusion},
-  author       = {Nguyen, Chien Van and Hegde, Chaitra and Pham, Van-Cuong and Rossi, Ryan A. and Dernoncourt, Franck and Nguyen, Thien Huu},
-  journal      = {arXiv preprint arXiv:2605.12825},
-  year         = {2026},
-  abstract     = {We introduce Orthrus, a simple and efficient dual-architecture framework that unifies the exact generation fidelity of autoregressive Large Language Models (LLMs) with the high-speed parallel token generation of diffusion models. The sequential nature of standard autoregressive decoding represents a fundamental bottleneck for high-throughput inference. While diffusion language models attempt to break this barrier via parallel generation, they suffer from significant performance degradation, high training costs, and a lack of rigorous convergence guarantees. Orthrus resolves this dichotomy natively. Designed to seamlessly integrate into existing Transformers, the framework augments a frozen LLM with a lightweight, trainable module to create a parallel diffusion view alongside the standard autoregressive view. In this unified system, both views attend to the exact same high-fidelity Key-Value (KV) cache; the autoregressive head executes context pre-filling to construct accurate KV representations, while the diffusion head executes parallel generation. By employing an exact consensus mechanism between the two views, Orthrus guarantees lossless inference, delivering up to a 7.8x speedup with only an O(1) memory cache overhead and minimal parameter additions.},
-  pdf          = {https://arxiv.org/abs/2605.12825},
   selected     = {true},
   bibtex_show  = {false}
 }

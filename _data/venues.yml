@@ -1,6 +1,6 @@
 "arXiv":
   url: https://arxiv.org/
-  color: "#D32F2F"
+  color: "#6c757d"
 
 "ACL":
   url: https://aclanthology.org/
@@ -13,3 +13,7 @@
 "COLING":
   url: https://aclanthology.org/venues/coling/
   color: "#D79B00"
+
+"NeurIPS":
+  url: https://neurips.cc/
+  color: "#D32F2F"

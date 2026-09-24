@@ -65,10 +65,23 @@
           color: var(--global-theme-color) !important;
           border: 1px solid var(--global-theme-color);
         }
+
+        .spotlight-badge {
+          display: inline-block;
+          margin-bottom: 0.5rem;
+          color: #d32f2f !important;
+          background-color: #fff !important;
+          border: 2px solid #d32f2f;
+          font-weight: 700;
+        }
       }
 
       .title {
         font-weight: bolder;
+      }
+
+      .spotlight-presentation {
+        color: #8b0000;
       }
 
       .author {
